@@ -23,7 +23,7 @@ import matplotlib.pyplot as plt
 device = torch.device('cuda' if torch.cuda.is_available else 'cpu')
 
 processor = TrOCRProcessor.from_pretrained('microsoft/trocr-large-handwritten')
-model = VisionEncoderDecoderModel.from_pretrained('trocr_fine_tunedBC/checkpoint-100')
+model = VisionEncoderDecoderModel.from_pretrained('MLDN-fine-tuned/checkpoint-100')
 #trocr_fine_tuned/checkpoint-100
 
 def ocr(image, processor, model):
